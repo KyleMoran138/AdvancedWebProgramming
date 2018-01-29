@@ -1,21 +1,24 @@
 @{
   var result="";
-  if (Request["x"] != null && Request["y"] != null && Request["operation"] != null){
+  var x = 0;
+  var y = 0;
+  if (Request["x"] != null && Request["y"] != null && Request["operation"] != null){\
+    x = int.Parse(Request['x']);
+    y = int.Parse(Request['y']);
     switch(Request["operation"]){
       case "add":
-        result = Request['x'] + Request['y'];
+        result = x + y;
         break;
       case "subtract":
-        result = Request['x'] - Request['y'];
+        result = x - y;
         break;
       case "multiply":
-        result = Request['x'] * Request['y'];
+        result = x * y;
         break;
       case "divide":
-        result = Request['x'] / Request['y'];
+        result = x / y;
         break;
     }
-    result= Request["x"];
   }
 }
 <!DOCTYPE html>
