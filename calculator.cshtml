@@ -3,16 +3,16 @@
   if (Request["x"] != null && Request["y"] != null && Request["operation"] != null){
     switch(Request["operation"]){
       case "add":
-        result = Request['x'] __ Request['y'];
+        result = Request['x'] + Request['y'];
         break;
       case "subtract":
-        result = Request['x'] __ Request['y'];
+        result = Request['x'] - Request['y'];
         break;
       case "multiply":
-        result = Request['x'] __ Request['y'];
+        result = Request['x'] * Request['y'];
         break;
       case "divide":
-        result = Request['x'] __ Request['y'];
+        result = Request['x'] / Request['y'];
         break;
     }
     result= Request["x"];
