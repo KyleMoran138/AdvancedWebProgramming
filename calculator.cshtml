@@ -1,0 +1,27 @@
+@{
+  var result="";
+  if (Request["x"] != null){
+    result= Request["x"];
+  }
+}
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Calculator</h1>
+    <form method="post" action="">
+      Number one: <input type="number" name="x">
+      Number two: <input type="number" name="y">
+      <br />
+      I want to
+      <fieldset class="operation-row">
+        <input value="add" name="operation" type="radio">add</input>
+        <input value="subtract" name="operation" type="radio">subtract</input>
+        <input value="multiply" name="operation" type="radio">multiply</input>
+        <input value="devide" name="operation" type="radio">devide</input>
+      </fieldset>
+      those numbers
+      <input type="submit">
+      <textarea readonly>@if(result != ""){@result}</textarea>
+    </form>
+  </body>
+</html>
