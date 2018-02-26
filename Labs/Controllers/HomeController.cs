@@ -21,5 +21,14 @@ namespace Labs.Controllers {
 
             return View();
         }
+
+        public ActionResult Basic() {
+            var p = new Labs.Models.Person {
+                FirstName = "Kyle",
+                LastName = "Moran"
+            };
+
+            return View(p);
+        }
     }
 }
