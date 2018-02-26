@@ -202,9 +202,6 @@ project.lock.json
 **/node_modules/*
 **/wwwroot/*
 
-#Lab folder
-Lab Assignments/*
-
 # SpecFlow specific
 *.feature.cs
 *.feature.xlsx.*
@@ -213,4 +210,3 @@ Lab Assignments/*
 #####
 # End of core ignore list, below put you custom 'per project' settings (patterns or path)
 #####
-Lab Assignments - Shortcut.lnk
